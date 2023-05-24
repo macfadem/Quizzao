@@ -1,0 +1,74 @@
+:host {
+    display: flex;
+    justify-content: center;
+}
+  
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    width: 80%;
+    padding: 20px 0;
+    margin: 1.5rem 0;
+}
+
+header img {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4466CA;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-left: 1rem;
+}
+
+nav a {
+    color: white;
+    width: 100%;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: lighter;
+    padding: 0 1rem;
+    margin: 0 1rem;
+}
+
+nav input {
+    width: 90%;
+    border: none;
+    border-radius: 0.5rem 0 0 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: lighter;
+    color: #4466CA;
+}
+
+nav button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: #111111;
+    padding: 0.5rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+  
+
+nav button svg {
+    height: 1rem;
+    width: auto;
+}
+
+.search-container {
+    display: flex;
+    width: 100%;
+}
+
+.search-container form {
+    display: flex;
+    width: 100%;
+  }

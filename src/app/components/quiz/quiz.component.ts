@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import quiz_questions from '../../../assets/data/quiz_questions.json';
 
 @Component({
@@ -8,7 +9,6 @@ import quiz_questions from '../../../assets/data/quiz_questions.json';
 })
 
 export class QuizComponent implements OnInit {
-
   title:string = '';
   questions:any;
   questionSelected:any;
@@ -18,20 +18,26 @@ export class QuizComponent implements OnInit {
 
   questionIndex:number = 0;
   questionMaxIndex:number = 0;
-
   finished:boolean = false;
 
-  constructor() { }
+  quizquestions:any;
+
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    if(quiz_questions){
-      this.finished = false;
-      this.title = quiz_questions.title;
-      this.questions = quiz_questions.questions;
-      this.questionIndex = 0;
-      this.questionMaxIndex = this.questions.length;
-      this.questionSelected = this.questions[this.questionIndex];
-    }
+    this.route.params.subscribe(params => {
+      const id = params['id']; // get the quiz id from the route parameters
+      this.quizquestions = quiz_questions[id]; // load the quiz using the id
+
+      if(this.quizquestions){
+        this.finished = false;
+        this.title = this.quizquestions.title;
+        this.questions = this.quizquestions.questions;
+        this.questionIndex = 0;
+        this.questionMaxIndex = this.questions.length;
+        this.questionSelected = this.questions[this.questionIndex];
+      }
+    });
   }
 
   selectOption(value:string){
@@ -45,7 +51,7 @@ export class QuizComponent implements OnInit {
       this.questionSelected = this.questions[this.questionIndex];
     }else{
       const finalAnswer:string = await this.checkResult(this.answers);
-      this.answerSelected = quiz_questions.results[finalAnswer as keyof typeof quiz_questions.results];
+      this.answerSelected = this.quizquestions.results[finalAnswer as keyof typeof this.quizquestions.results];
       this.finished = true;
     }
   }
@@ -60,5 +66,4 @@ export class QuizComponent implements OnInit {
     });
     return result;
   }
-
 }

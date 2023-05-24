@@ -1,10 +1,10 @@
 .quiz_container {
     width: 80%;
     margin: auto;
-    margin-top: 2rem;
+    margin-top: 10rem;
 }
 
-.quiz_logo {
+.quiz_title {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,11 +12,11 @@
     height: 100%;
 }
 
-.quiz_logo img {
+.quiz_title img {
     height: 4rem;
 }
 
-.quiz_logo h3 {
+.quiz_title h3 {
     margin-top: 1rem;
 }
 
@@ -30,6 +30,7 @@
     height: 12rem;
     font-size: 1.5rem;
     margin: 1rem 0;
+    padding: 1rem;
 }
 
 .quiz_options {

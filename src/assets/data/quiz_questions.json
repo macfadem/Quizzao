@@ -1,55 +1,96 @@
-{
+[
+  {
     "title":"Você seria um heroi ou vilão ?",
-  "questions":[
-    {
-      "id":1,
-      "question": "Qual super poder você escolheria ?",
-      "options":[
-        {"id": 1, "name":"Raios-Lasers", "alias":"A"},
-        {"id": 2, "name":"Voar", "alias":"B"},
-        {"id": 3, "name":"Explodir coisas", "alias":"A"},
-        {"id": 4, "name":"Curar feridas", "alias":"B"},
-        {"id": 5, "name":"Soltar fogo pelas mãos", "alias":"A"}
-      ]
-    },
-    {
-      "id":2,
-      "question": "Quem você salvaria primeiro ?",
-      "options":[
-        {"id": 1, "name":"Crianças", "alias":"A"},
-        {"id": 2, "name":"Idosos", "alias":"A"},
-        {"id": 3, "name":"Não saberia escolher", "alias":"B"}
-      ]
-    },
-    {
-      "id":3,
-      "question": "Qual a sua maior preocupação ao enfretar outro super ser ?",
-      "options":[
-        {"id": 1, "name":"Não destruir prédios", "alias":"B"},
-        {"id": 2, "name":"Socar a cara do inimigo", "alias":"A"},
-        {"id": 3, "name":"Não sujar meu traje", "alias":"A"},
-        {"id": 4, "name":"Não deixar ninguém se ferir", "alias":"B"}
-      ]
-    },
-    {
-      "id":4,
-      "question": "Qual o seu maior foco ?",
-      "options":[
-        {"id": 1, "name":"Ficar rico com poderes", "alias":"A"},
-        {"id": 2, "name":"Salvar a cidade", "alias":"B"}
-      ]
-    },
-    {
-      "id":5,
-      "question": "Qual o seu apelido de super ser ?",
-      "options":[
-        {"id": 1, "name":"O Terrivel", "alias":"A"},
-        {"id": 2, "name":"Amigo da vizinhança", "alias":"B"}
-      ]
+    "questions":[
+        {"id":1, "question": "Qual super poder você escolheria ?", "options":[
+             {"id": 1, "name":"Raios-Lasers", "alias":"A"},
+             {"id": 2, "name":"Voar", "alias":"B"},
+             {"id": 3, "name":"Explodir coisas", "alias":"A"},
+             {"id": 4, "name":"Curar feridas", "alias":"B"},
+             {"id": 5, "name":"Soltar fogo pelas mãos", "alias":"A"}
+         ]},
+         {"id":2, "question": "Quem você salvaria primeiro ?", "options":[
+             {"id": 1, "name":"Crianças", "alias":"A"},
+             {"id": 2, "name":"Idosos", "alias":"A"},
+             {"id": 3, "name":"Não saberia escolher", "alias":"B"}
+         ]},
+         {"id":3, "question": "Qual a sua maior preocupação ao enfrentar outro super ser ?", "options":[
+             {"id": 1, "name":"Não destruir prédios", "alias":"B"},
+             {"id": 2, "name":"Socar a cara do inimigo", "alias":"A"},
+             {"id": 3, "name":"Não sujar meu traje", "alias":"A"},
+            {"id": 4, "name":"Não deixar ninguém se ferir", "alias":"B"}
+         ]},
+        {"id":4, "question": "Qual o seu maior foco ?", "options":[
+            {"id": 1, "name":"Ficar rico com poderes", "alias":"A"},
+            {"id": 2, "name":"Salvar a cidade", "alias":"B"}
+        ]},
+        {"id":5, "question": "Qual o seu apelido de super ser ?", "options":[
+            {"id": 1, "name":"O Terrivel", "alias":"A"},
+            {"id": 2, "name":"Amigo da vizinhança", "alias":"B"}
+        ]}
+     ],
+    "results":{
+        "A": "Você muito provavelmente seria um super vilão!",
+        "B": "Você muito provavelmente seria um super Herói!"
     }
-  ],
-  "results":{
-    "A": "Você muito provavelmente seria um super vilão!",
-    "B": "Você muito provavelmente seria um super Herói!"
+  },
+  {
+    "title":"Qual é o seu animal espiritual?",
+      "questions":[
+          {"id":1, "question": "Qual é o seu ambiente preferido?", "options":[
+              {"id": 1, "name":"Floresta", "alias":"A"},
+              {"id": 2, "name":"Oceano", "alias":"B"},
+               {"id": 3, "name":"Deserto", "alias":"C"},
+              {"id": 4, "name":"Cidade", "alias":"D"}
+          ]},
+          {"id":2, "question": "Como você se descreveria?", "options":[
+              {"id": 1, "name":"Aventureiro", "alias":"A"},
+              {"id": 2, "name":"Calmo", "alias":"B"},
+              {"id": 3, "name":"Resiliente", "alias":"C"},
+              {"id": 4, "name":"Sociável", "alias":"D"}            
+          ]},
+          {"id":3, "question": "Qual é o seu passatempo preferido?", "options":[
+              {"id": 1, "name":"Ler um livro", "alias":"A"},
+              {"id": 2, "name":"Praticar esportes", "alias":"B"},
+              {"id": 3, "name":"Viajar", "alias":"C"},
+              {"id": 4, "name":"Estar com amigos", "alias":"D"}
+          ]},
+          {"id":4, "question": "Se você pudesse escolher, preferiria...", "options":[
+              {"id": 1, "name":"Voar", "alias":"A"},
+              {"id": 2, "name":"Nadar", "alias":"B"},
+              {"id": 3, "name":"Correr", "alias":"C"},
+              {"id": 4, "name":"Escalar", "alias":"D"}
+         ]}
+      ],
+    "results":{
+      "A": "Você é um lobo - inteligente, faminto por conhecimento e adora uma boa aventura.",
+      "B": "Você é um golfinho - alegre, social e ama estar perto de seus entes queridos.",
+      "C": "Você é um camelo - resiliente, determinado e não tem medo de desafios difíceis.",
+      "D": "Você é um macaco - enérgico, amigável e gosta de explorar novos lugares."
+    }
+  },
+  {
+    "title":"Qual cidade do mundo combina mais com você?",
+      "questions":[
+        {"id":1, "question": "Qual é o seu clima preferido?", "options":[
+          {"id": 1, "name":"Frio", "alias":"A"},
+          {"id": 2, "name":"Quente", "alias":"B"},
+          {"id": 3, "name":"Temperado", "alias":"C"}
+        ]},
+        {"id":2, "question": "Qual é o seu tipo de comida preferido?", "options":[
+          {"id": 1, "name":"Comida caseira", "alias":"A"},
+          {"id": 2, "name":"Fast food", "alias":"B"},
+          {"id": 3, "name":"Gourmet", "alias":"C"}
+        ]},
+        {"id":3, "question": "Qual é o seu passatempo preferido?", "options":[
+          {"id": 1, "name":"Caminhar na natureza", "alias":"A"},
+          {"id": 2, "name":"Visitar museus", "alias":"B"},
+          {"id": 3, "name":"Ir a concertos e shows", "alias":"C"}
+        ]}],
+      "results":{
+        "A": "Você combinaria com uma cidade tranquila e acolhedora como Oslo, na Noruega.",
+        "B": "Você combinaria com uma cidade vibrante e cheia de vida como Los Angeles, nos Estados Unidos.",
+        "C": "Você combinaria com uma cidade cheia de cultura e história como Paris, na França."
+      }
   }
-}
+]

@@ -1,0 +1,3 @@
+<div *ngFor="let quiz of quizzes; index as i">
+    <button [routerLink]="['/quiz', i]">{{ quiz.title }}</button>
+</div>
