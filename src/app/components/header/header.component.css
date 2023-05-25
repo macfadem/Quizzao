@@ -21,14 +21,14 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #4466CA;
+    background-color: var(--darkblue);
     padding: 1rem;
     border-radius: 0.5rem;
     margin-left: 1rem;
 }
 
 nav a {
-    color: white;
+    color: var(--white);
     width: 100%;
     text-decoration: none;
     font-size: 1rem;
@@ -44,7 +44,7 @@ nav input {
     padding: 0.5rem 1rem;
     font-size: 1rem;
     font-weight: lighter;
-    color: #4466CA;
+    color: var(--white);
 }
 
 nav button {
@@ -52,7 +52,7 @@ nav button {
     align-items: center;
     justify-content: center;
     border: none;
-    background-color: #111111;
+    background-color: var(--orange);
     padding: 0.5rem;
     border-radius: 0 0.5rem 0.5rem 0;
 }
@@ -61,10 +61,11 @@ nav button {
 nav button svg {
     height: 1rem;
     width: auto;
+    color: var(--black);
 }
 
 .search-container {
-    display: flex;
+    display: none;
     width: 100%;
 }
 
@@ -72,3 +73,9 @@ nav button svg {
     display: flex;
     width: 100%;
   }
+
+@media (min-width: 768px) {
+    .search-container {
+        display: flex;
+    }
+}

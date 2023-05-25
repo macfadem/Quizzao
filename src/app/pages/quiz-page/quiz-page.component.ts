@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./quiz-page.component.css']
 })
 export class QuizPageComponent implements OnInit {
-
+  result: string = '';
+  finished: boolean = false;
   constructor() { }
 
   ngOnInit(): void {

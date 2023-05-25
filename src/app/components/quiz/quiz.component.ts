@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import quiz_questions from '../../../assets/data/quiz_questions.json';
 
@@ -22,12 +22,15 @@ export class QuizComponent implements OnInit {
 
   quizquestions:any;
 
+  @Output() quizFinished = new EventEmitter<string>();
+  @Output() quizStatus = new EventEmitter<boolean>();
+
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.route.params.subscribe(params => {
-      const id = params['id']; // get the quiz id from the route parameters
-      this.quizquestions = quiz_questions[id]; // load the quiz using the id
+      const id = params['id'];
+      this.quizquestions = quiz_questions[id];
 
       if(this.quizquestions){
         this.finished = false;
@@ -36,6 +39,8 @@ export class QuizComponent implements OnInit {
         this.questionIndex = 0;
         this.questionMaxIndex = this.questions.length;
         this.questionSelected = this.questions[this.questionIndex];
+
+        
       }
     });
   }
@@ -52,7 +57,8 @@ export class QuizComponent implements OnInit {
     }else{
       const finalAnswer:string = await this.checkResult(this.answers);
       this.answerSelected = this.quizquestions.results[finalAnswer as keyof typeof this.quizquestions.results];
-      this.finished = true;
+      this.quizFinished.emit(this.answerSelected);
+      this.quizStatus.emit(true);
     }
   }
 
