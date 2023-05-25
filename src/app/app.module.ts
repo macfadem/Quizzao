@@ -9,6 +9,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { QuizPageComponent } from './pages/quiz-page/quiz-page.component';
 import { QuizListComponent } from './components/quiz-list/quiz-list.component';
 import { ResultComponent } from './components/result/result.component';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +26,7 @@ import { ResultComponent } from './components/result/result.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}]
 })
 export class AppModule { }
