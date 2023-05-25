@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "title": "Which Star Wars character are you?",
     "image": "./assets/imgs/star-wars.svg",
     "questions": [
@@ -62,6 +63,7 @@
     }
   },
   {
+    "id": 2,
     "title": "Which Harry Potter character are you?",
     "image": "./assets/imgs/harry-potter.svg",
     "questions": [
@@ -124,8 +126,9 @@
     }
   },
   {
+    "id": 3,
     "title": "Which Pop Singer Are You?",
-    "image": "./assets/imgs/beyonce.svg",
+    "image": "./assets/imgs/beyonce.jpg",
     "questions": [
       {
         "id": 1,
@@ -186,6 +189,7 @@
     }
   },
   {
+    "id": 4,
     "title": "Which Lord of the Rings character are you?",
     "image": "./assets/imgs/lotr.png",
     "questions": [
@@ -248,8 +252,9 @@
     }
   },
   {
+    "id": 5,
     "title": "Which Element Are You?",
-    "image": "./assets/imgs/elements.png",
+    "image": "./assets/imgs/elements.jpg",
     "questions": [
       {
         "id": 1,
@@ -308,5 +313,68 @@
         "C": "You are Water! Emotional, intuitive, and deep.",
         "D": "You are Earth! Grounded, practical, and reliable."
     }
-  }  
+  },
+  {
+    "id": 6,
+    "title": "What Type of Pasta Are You?",
+    "image": "./assets/imgs/pasta.jpg",
+    "questions": [
+      {
+        "id": 1,
+        "question": "How would your friends describe you?",
+        "options": [
+          {"id": 1, "name": "Tough and strong", "alias": "A"},
+          {"id": 2, "name": "Flexible and easygoing", "alias": "B"},
+          {"id": 3, "name": "Twisted and fun", "alias": "C"},
+          {"id": 4, "name": "Large and in charge", "alias": "D"}
+        ]
+      },
+      {
+        "id": 2,
+        "question": "What's your ideal vacation?",
+        "options": [
+          {"id": 1, "name": "Skiing in the Alps", "alias": "A"},
+          {"id": 2, "name": "Beach trip in Hawaii", "alias": "B"},
+          {"id": 3, "name": "Visiting amusement parks", "alias": "C"},
+          {"id": 4, "name": "Exploring big cities", "alias": "D"}
+        ]
+      },
+      {
+        "id": 3,
+        "question": "Pick a genre of music:",
+        "options": [
+          {"id": 1, "name": "Rock", "alias": "A"},
+          {"id": 2, "name": "Pop", "alias": "B"},
+          {"id": 3, "name": "Electronic", "alias": "C"},
+          {"id": 4, "name": "Hip Hop", "alias": "D"}
+        ]
+      },
+      {
+        "id": 4,
+        "question": "What's your favorite movie genre?",
+        "options": [
+          {"id": 1, "name": "Action", "alias": "A"},
+          {"id": 2, "name": "Romance", "alias": "B"},
+          {"id": 3, "name": "Comedy", "alias": "C"},
+          {"id": 4, "name": "Adventure", "alias": "D"}
+        ]
+      },
+      {
+        "id": 5,
+        "question": "What's your favorite time of day?",
+        "options": [
+          {"id": 1, "name": "Morning", "alias": "A"},
+          {"id": 2, "name": "Afternoon", "alias": "B"},
+          {"id": 3, "name": "Evening", "alias": "C"},
+          {"id": 4, "name": "Night", "alias": "D"}
+        ]
+      }
+    ],
+    "results": {
+        "A": "You are Spaghetti! Tough, strong and a classic favorite.",
+        "B": "You are Fettuccine! Flexible, adaptable and always delightful.",
+        "C": "You are Fusilli! Spirally, fun and a crowd pleaser.",
+        "D": "You are Lasagna! Layered, interesting and the life of the party."
+    }
+  }
 ]
