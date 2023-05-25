@@ -1,0 +1,312 @@
+[
+  {
+    "title": "Which Star Wars character are you?",
+    "image": "./assets/imgs/star-wars.svg",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Which Star Wars power would you choose?",
+        "options": [
+          {"id": 1, "name": "Use the Force", "alias": "A"},
+          {"id": 2, "name": "Pilot a starship", "alias": "B"},
+          {"id": 3, "name": "Wield a lightsaber", "alias": "C"},
+          {"id": 4, "name": "Master hand-to-hand combat", "alias": "D"}
+          ]
+      },
+      {
+        "id": 2,
+        "question": "Who would you ally yourself with?",
+        "options": [
+          {"id": 1, "name": "Jedi Order", "alias": "A"},
+          {"id": 2, "name": "Sith Order", "alias": "B"},
+          {"id": 3, "name": "Galactic Empire", "alias": "C"},
+          {"id": 4, "name": "Rebel Alliance", "alias": "D"}
+        ]
+      },
+      {
+        "id": 3,
+        "question": "What's your favorite Star Wars planet?",
+        "options": [
+          {"id": 1, "name": "Tatooine", "alias": "A"},
+          {"id": 2, "name": "Coruscant", "alias": "B"},
+          {"id": 3, "name": "Hoth", "alias": "C"},
+          {"id": 4, "name": "Dagobah", "alias": "D"}
+        ]
+      },
+      {
+        "id": 4,
+        "question": "What's your strategy in a battle?",
+        "options": [
+          {"id": 1, "name": "Use the Force to manipulate the situation", "alias": "A"},
+          {"id": 2, "name": "Rely on technical skills and tools", "alias": "B"},
+          {"id": 3, "name": "Use strength and ferocity to overpower enemies", "alias": "C"},
+          {"id": 4, "name": "Use cunning and strategy to outwit opponents", "alias": "D"}
+        ]
+      },
+      {
+        "id": 5,
+        "question": "Which Star Wars vehicle would you prefer?",
+        "options": [
+          {"id": 1, "name": "Millennium Falcon", "alias": "A"},
+          {"id": 2, "name": "Death Star", "alias": "B"},
+          {"id": 3, "name": "TIE Fighter", "alias": "C"},
+          {"id": 4, "name": "X-Wing Starfighter", "alias": "D"}
+        ]
+      }
+    ],
+    "results": {
+        "A": "You are most like Luke Skywalker!",
+        "B": "You are most like Darth Vader!",
+        "C": "You are most like Boba Fett!",
+        "D": "You are most like Han Solo!"
+    }
+  },
+  {
+    "title": "Which Harry Potter character are you?",
+    "image": "./assets/imgs/harry-potter.svg",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Which Hogwarts house would you be sorted into?",
+        "options": [
+          {"id": 1, "name": "Gryffindor", "alias": "A"},
+          {"id": 2, "name": "Hufflepuff", "alias": "B"},
+          {"id": 3, "name": "Ravenclaw", "alias": "C"},
+          {"id": 4, "name": "Slytherin", "alias": "D"}
+        ]
+      },
+      {
+        "id": 2,
+        "question": "What would your Patronus be?",
+        "options": [
+          {"id": 1, "name": "Stag", "alias": "A"},
+          {"id": 2, "name": "Otter", "alias": "B"},
+          {"id": 3, "name": "Eagle", "alias": "C"},
+          {"id": 4, "name": "Serpent", "alias": "D"}
+        ]
+      },
+      {
+        "id": 3,
+        "question": "What's your favorite class at Hogwarts?",
+        "options": [
+          {"id": 1, "name": "Defense Against the Dark Arts", "alias": "A"},
+          {"id": 2, "name": "Herbology", "alias": "B"},
+          {"id": 3, "name": "Charms", "alias": "C"},
+          {"id": 4, "name": "Potions", "alias": "D"}
+        ]
+      },
+      {
+        "id": 4,
+        "question": "Which magical item would you most like to possess?",
+        "options": [
+          {"id": 1, "name": "The Elder Wand", "alias": "A"},
+          {"id": 2, "name": "The Marauder's Map", "alias": "B"},
+          {"id": 3, "name": "Time-Turner", "alias": "C"},
+          {"id": 4, "name": "Invisibility Cloak", "alias": "D"}
+        ]
+      },
+      {
+        "id": 5,
+        "question": "Which magical creature would you prefer?",
+        "options": [
+          {"id": 1, "name": "Phoenix", "alias": "A"},
+          {"id": 2, "name": "Hippogriff", "alias": "B"},
+          {"id": 3, "name": "Niffler", "alias": "C"},
+          {"id": 4, "name": "Basilisk", "alias": "D"}
+        ]
+      }
+    ],
+    "results": {
+        "A": "You are most like Harry Potter!",
+        "B": "You are most like Hagrid!",
+        "C": "You are most like Hermione Granger!",
+        "D": "You are most like Draco Malfoy!"
+    }
+  },
+  {
+    "title": "Which Pop Singer Are You?",
+    "image": "./assets/imgs/beyonce.svg",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What's your favorite music genre?",
+        "options": [
+          {"id": 2, "name": "Pop", "alias": "B"},
+          {"id": 1, "name": "R&B", "alias": "A"},
+          {"id": 3, "name": "Country", "alias": "C"},
+          {"id": 4, "name": "Hip Hop", "alias": "D"}
+        ]
+      },
+      {
+        "id": 2,
+        "question": "What's your favorite way to relax?",
+        "options": [
+          {"id": 1, "name": "Fashion Shopping", "alias": "A"},
+          {"id": 4, "name": "Dancing", "alias": "D"},
+          {"id": 2, "name": "Writing Songs", "alias": "B"},
+          {"id": 3, "name": "Spending Time in Nature", "alias": "C"}
+        ]
+      },
+      {
+        "id": 3,
+        "question": "How would your friends describe you?",
+        "options": [
+          {"id": 4, "name": "Energetic and Outgoing", "alias": "D"},
+          {"id": 1, "name": "Confident and Bold", "alias": "A"},
+          {"id": 2, "name": "Kind and Sweet", "alias": "B"},
+          {"id": 3, "name": "Down-to-Earth", "alias": "C"}
+        ]
+      },
+      {
+        "id": 4,
+        "question": "What's your preferred style of dance?",
+        "options": [
+          {"id": 1, "name": "Hip Hop Dance", "alias": "A"},
+          {"id": 3, "name": "Line Dancing", "alias": "C"},
+          {"id": 4, "name": "Pop-and-Lock", "alias": "D"},
+          {"id": 2, "name": "Ballet", "alias": "B"}
+        ]
+      },
+      {
+        "id": 5,
+        "question": "What's your preferred stage costume?",
+        "options": [
+          {"id": 1, "name": "Designer Dress", "alias": "A"},
+          {"id": 2, "name": "Casual Jeans and T-Shirt", "alias": "B"},
+          {"id": 3, "name": "Cowboy Hat and Boots", "alias": "C"},
+          {"id": 4, "name": "Glittery Outfit", "alias": "D"}
+        ]
+      }
+    ],
+    "results": {
+        "A": "You are most like Rihanna!",
+        "B": "You are most like Taylor Swift!",
+        "C": "You are most like Carrie Underwood!",
+        "D": "You are most like Beyonce!"
+    }
+  },
+  {
+    "title": "Which Lord of the Rings character are you?",
+    "image": "./assets/imgs/lotr.png",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What would be your preferred weapon?",
+        "options": [
+          {"id": 1, "name": "Sword", "alias": "A"},
+          {"id": 2, "name": "Bow and Arrows", "alias": "B"},
+          {"id": 3, "name": "Staff", "alias": "C"},
+          {"id": 4, "name": "Your Wit and Courage", "alias": "D"}
+        ]
+      },
+      {
+        "id": 2,
+        "question": "What's your favorite Middle Earth location?",
+        "options": [
+          {"id": 1, "name": "The Shire", "alias": "A"},
+          {"id": 2, "name": "Rivendell", "alias": "B"},
+          {"id": 3, "name": "Mordor", "alias": "C"},
+          {"id": 4, "name": "Gondor", "alias": "D"}
+        ]
+      },
+      {
+        "id": 3,
+        "question": "What's your preferred mode of travel?",
+        "options": [
+          {"id": 1, "name": "Walking/Hiking", "alias": "A"},
+          {"id": 2, "name": "Riding a Horse", "alias": "B"},
+          {"id": 3, "name": "Eagle", "alias": "C"},
+          {"id": 4, "name": "Boat", "alias": "D"}
+        ]
+      },
+      {
+        "id": 4,
+        "question": "What trait do you value most in others?",
+        "options": [
+          {"id": 1, "name": "Loyalty", "alias": "A"},
+          {"id": 2, "name": "Wisdom", "alias": "B"},
+          {"id": 3, "name": "Courage", "alias": "C"},
+          {"id": 4, "name": "Leadership", "alias": "D"}
+        ]
+      },
+      {
+        "id": 5,
+        "question": "Which mythical creature would you prefer to encounter?",
+        "options": [
+          {"id": 1, "name": "Hobbit", "alias": "A"},
+          {"id": 2, "name": "Elf", "alias": "B"},
+          {"id": 3, "name": "Orc", "alias": "C"},
+          {"id": 4, "name": "Ent", "alias": "D"}
+        ]
+      }
+    ],
+    "results": {
+        "A": "You are most like Frodo Baggins!",
+        "B": "You are most like Legolas!",
+        "C": "You are most like Gandalf!",
+        "D": "You are most like Aragorn!"
+    }
+  },
+  {
+    "title": "Which Element Are You?",
+    "image": "./assets/imgs/elements.png",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What's your preferred climate?",
+        "options": [
+          {"id": 1, "name": "Warm and Sunny", "alias": "A"},
+          {"id": 2, "name": "Cool and Breezy", "alias": "B"},
+          {"id": 3, "name": "Misty and Mysterious", "alias": "C"},
+          {"id": 4, "name": "Sturdy and Stable", "alias": "D"}
+        ]
+      },
+      {
+        "id": 2,
+        "question": "What's your preferred activity?",
+        "options": [
+          {"id": 1, "name": "Hiking in the Mountains", "alias": "D"},
+          {"id": 2, "name": "Sailing on the Sea", "alias": "C"},
+          {"id": 3, "name": "Meditating in a Garden", "alias": "B"},
+          {"id": 4, "name": "Sunbathing on a Beach", "alias": "A"}
+        ]
+      },
+      {
+        "id": 3,
+        "question": "How do you approach problems?",
+        "options": [
+          {"id": 1, "name": "With passion and intensity", "alias": "A"},
+          {"id": 2, "name": "With calm and tranquility", "alias": "B"},
+          {"id": 3, "name": "With adaptability and flexibility", "alias": "C"},
+          {"id": 4, "name": "With persistence and resilience", "alias": "D"}
+        ]
+      },
+      {
+        "id": 4,
+        "question": "What trait do you value most in others?",
+        "options": [
+          {"id": 1, "name": "Enthusiasm", "alias": "A"},
+          {"id": 2, "name": "Intellect", "alias": "B"},
+          {"id": 3, "name": "Compassion", "alias": "C"},
+          {"id": 4, "name": "Reliability", "alias": "D"}
+        ]
+      },
+      {
+        "id": 5,
+        "question": "What's your favorite type of music?",
+        "options": [
+          {"id": 1, "name": "Rock and Metal", "alias": "A"},
+          {"id": 2, "name": "Classical and Instrumental", "alias": "B"},
+          {"id": 3, "name": "Ambient and New Age", "alias": "C"},
+          {"id": 4, "name": "Folk and Country", "alias": "D"}
+        ]
+      }
+    ],
+    "results": {
+        "A": "You are Fire! Passionate, energetic, and transformative.",
+        "B": "You are Air! Intellectual, communicative, and adaptable.",
+        "C": "You are Water! Emotional, intuitive, and deep.",
+        "D": "You are Earth! Grounded, practical, and reliable."
+    }
+  }  
+]

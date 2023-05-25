@@ -1,0 +1,1 @@
+@import"https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;400;500;600;700;900&display=swap";:root{--black: #000814;--white: #fff;--darkblue: #001d3d;--blue: #003566;--orange: #ffc300;--yellow: #ffd60a}*{padding:0;margin:0;border:0;box-sizing:border-box;color:var(--white)}body{background-color:var(--black);font-family:MuseoModerno,cursive}
