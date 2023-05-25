@@ -1,7 +1,16 @@
-<div class="container">
-    <div class="quiz-card" *ngFor="let quiz of quizzes; index as i">
-        <img [src]="quiz.image" alt="Quiz image" class="quiz-image">
-        <h2>{{ quiz.title }}</h2>
-        <button [routerLink]="['/quiz', i]" class="play-button">Start Quiz</button>
-    </div>
-</div>
+<app-header></app-header>
+
+<ng-container *ngIf="filteredQuizzes.length > 0; else noResults">
+  <div class="container">
+    <app-quiz-card
+      *ngFor="let quiz of filteredQuizzes; index as i"
+      [quiz]="quiz"
+    ></app-quiz-card>
+  </div>
+</ng-container>
+
+<ng-template #noResults>
+  <div class="container">
+    <p>No results found for the search query.</p>
+  </div>
+</ng-template>

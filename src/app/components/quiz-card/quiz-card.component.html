@@ -1,0 +1,5 @@
+<div class="quiz-card">
+    <img [src]="quiz.image" alt="Quiz image" class="quiz-image">
+    <h2>{{ quiz.title }}</h2>
+    <button [routerLink]="['/quiz', quiz.id]" class="play-button">Start Quiz</button>
+</div>

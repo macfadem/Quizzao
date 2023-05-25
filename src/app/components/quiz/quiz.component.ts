@@ -7,66 +7,67 @@ import quiz_questions from '../../../assets/data/quiz_questions.json';
   templateUrl: './quiz.component.html',
   styleUrls: ['./quiz.component.css']
 })
-
 export class QuizComponent implements OnInit {
-  title:string = '';
-  questions:any;
-  questionSelected:any;
+  title: string = '';
+  questions: any;
+  questionSelected: any = {};
 
-  answers:string[] = [];
-  answerSelected:string = '';
+  answers: string[] = [];
+  answerSelected: string = '';
 
-  questionIndex:number = 0;
-  questionMaxIndex:number = 0;
-  finished:boolean = false;
+  questionIndex: number = 0;
+  questionMaxIndex: number = 0;
+  finished: boolean = false;
 
-  quizquestions:any;
+  quizquestions: any;
 
   @Output() quizFinished = new EventEmitter<string>();
   @Output() quizStatus = new EventEmitter<boolean>();
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    this.route.params.subscribe(params => {
-      const id = params['id'];
-      this.quizquestions = quiz_questions[id];
+    this.route.params.subscribe((params) => {
+      const id = +params['id'];
+      this.quizquestions = quiz_questions.find((quiz) => quiz.id === id);
 
-      if(this.quizquestions){
+      if (this.quizquestions) {
         this.finished = false;
         this.title = this.quizquestions.title;
         this.questions = this.quizquestions.questions;
         this.questionIndex = 0;
         this.questionMaxIndex = this.questions.length;
         this.questionSelected = this.questions[this.questionIndex];
-
-        
       }
     });
   }
 
-  selectOption(value:string){
+  selectOption(value: string) {
     this.answers.push(value);
     this.nextStep();
   }
 
-  async nextStep(){
+  async nextStep() {
     this.questionIndex++;
-    if(this.questionIndex < this.questionMaxIndex){
+    if (this.questionIndex < this.questionMaxIndex) {
       this.questionSelected = this.questions[this.questionIndex];
-    }else{
-      const finalAnswer:string = await this.checkResult(this.answers);
-      this.answerSelected = this.quizquestions.results[finalAnswer as keyof typeof this.quizquestions.results];
+    } else {
+      const finalAnswer: string = await this.checkResult(this.answers);
+      this.answerSelected =
+        this.quizquestions.results[finalAnswer as keyof typeof this.quizquestions.results];
       this.quizFinished.emit(this.answerSelected);
       this.quizStatus.emit(true);
     }
   }
 
-  async checkResult(answers:string[]){
+  async checkResult(answers: string[]) {
     const result = answers.reduce((previous, current, i, arr) => {
-      if(arr.filter(item => item === previous).length > arr.filter(item => item === current).length){
+      if (
+        arr.filter((item) => item === previous).length >
+        arr.filter((item) => item === current).length
+      ) {
         return previous;
-      }else{
+      } else {
         return current;
       }
     });

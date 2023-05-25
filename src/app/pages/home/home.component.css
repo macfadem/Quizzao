@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+
+.start-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-family: 'MuseoModerno', cursive;
+  font-size: 1.2rem;
+  color: var(--darkblue);
+  background-color: var(--yellow);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.start-button:hover {
+  background-color: var(--orange);
+}
+
+.start-button:active {
+  position: relative;
+  top: 0.1rem;
+}

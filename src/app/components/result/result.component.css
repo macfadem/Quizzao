@@ -44,3 +44,23 @@ button:active {
     top: 0.1rem;
 }
 
+.share-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-top: 1rem;
+}
+
+.share-icons .icon-link {
+    cursor: pointer;
+    background-color: var(--blue);
+    border-radius: 100%;
+    padding: 0.5rem;
+}
+
+.share-icons img {
+    padding: 0.1rem 0 0 0;
+    filter: invert(1);
+    width: 2.4rem;
+    height: 2rem;
+}

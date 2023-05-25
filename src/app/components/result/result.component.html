@@ -3,7 +3,16 @@
         <h2>Your result is:</h2>
         <p>{{result}}</p>
     </div>
-    <div>
-        <button [routerLink]="['']">Choose another</button>
-    </div>
+    <button [routerLink]="['/quizzes']">Choose another</button>
+    <div class="share-icons">
+        <a class="icon-link" (click)="shareOnLinkedIn()">
+          <img src="assets/imgs/linkedin.svg" alt="Share on LinkedIn">
+        </a>
+        <a class="icon-link" (click)="shareOnTwitter()">
+          <img src="assets/imgs/twitter.svg" alt="Share on Twitter">
+        </a>
+        <a class="icon-link" (click)="copyToClipboard()">
+          <img src="assets/imgs/copy-icon.svg" alt="Copy to clipboard">
+        </a>
+      </div>
 </div> 
